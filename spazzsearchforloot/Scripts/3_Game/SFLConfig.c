@@ -96,6 +96,11 @@ class SearchForLootConfig
             return;
         }
 
+        if (!configData)
+        {
+            configData = new SFLConfig();
+        }
+
         JsonFileLoader<SFLConfig>.JsonLoadFile(configPath, configData);
         SFLLogger.Log("'" + configName + "' found, loading existing config");
 
@@ -124,7 +129,9 @@ class SearchForLootConfig
             SaveConfig(configName, configData);
             return;
         }
-		JsonFileLoader<SFLConfig>.JsonLoadFile(configPath, configData);
+
+        configData = new SFLConfig();
+        JsonFileLoader<SFLConfig>.JsonLoadFile(configPath, configData);
 		
 		//upgrades...
 		if (!configData.MaxHealthCoef)
