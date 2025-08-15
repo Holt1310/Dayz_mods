@@ -1,0 +1,19 @@
+{
+    "compress": {
+        "exclude": [
+        ],
+        "include": [
+            "\\.csv$"
+        ]
+    },
+    "headers": [
+        {
+            "name": "product",
+            "value": "dayz ugc"
+        },
+        {
+            "name": "prefix",
+            "value": "SpazzSearchForLoot"
+        }
+    ]
+}

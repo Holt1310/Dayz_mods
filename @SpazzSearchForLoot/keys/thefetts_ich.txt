@@ -1,0 +1,10 @@
+Authority:  thefetts_ich
+Creation:   8/15/2025 7:13:16 AM (by IsaacPC\Isaac)
+
+== PRIVATE KEY ==
+File: C:\Steam\steamapps\common\DayZServer\@SpazzSearchForLoot\keys\thefetts_ich.biprivatekey
+MD5: 916a485a056a1cba03b3ba2018ad2ff8
+== PUBLIC KEY ==
+File: C:\Steam\steamapps\common\DayZServer\@SpazzSearchForLoot\keys\thefetts_ich.bikey
+MD5: 3c3d12be3411d579608b6fd8dfde08e5
+

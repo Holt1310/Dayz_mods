@@ -1,0 +1,17 @@
+modded class MissionServer
+{
+    void MissionServer()
+    {
+		SFLConfig config;
+		// Debug log to confirm MissionServer for SearchForLoot runs on startup
+		SFLLogger.Log("MissionServer: Initializing SearchForLoot config load/upgrade");
+		SFLConfig.UpgradeConfig("SearchForLoot.json", config);
+		SFLConfig.LoadConfig("SearchForLoot.json", config);
+		GetDayZGame().SetSearchForLootConfig(config);
+		GetDayZGame().SetBuildingCategoryMap(config);
+		/*
+		SearchForLootManager.ClearInstance();
+		SearchForLootManager.GetInstance();
+		*/
+    }
+};
